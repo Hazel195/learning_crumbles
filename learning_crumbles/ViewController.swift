@@ -10,19 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var videoIdTextField: UITextField!
+    
+    var videoIDIn: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadYoutube(videoID: "WXr82D00jlM")
+        
+        
+    }
+    @IBAction func searchIdButton(_ sender: UIButton) {
+        videoIDIn = videoIdTextField.text
+        
+        if (videoIDIn != nil) {
+            loadYoutube(videoID: videoIDIn!)//"WXr82D00jlM")
+        }
     }
     
-    func loadYoutube(videoID:String) {
+    func loadYoutube(videoID:String)
+    {
         // create a custom youtubeURL with the video ID
+    
         guard
             let youtubeURL = NSURL(string: "https://www.youtube.com/embed/\(videoID)")
             else { return }
         // load your web request
         webView.loadRequest( NSURLRequest(url: youtubeURL as URL) as URLRequest )
+    
     }
 
 }
