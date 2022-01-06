@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7A3E0BA2786DC1900C630EA /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = A7A3E0B92786DC1900C630EA /* fonts */; };
+		A7A3E0BF2786E80A00C630EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A3E0BE2786E80A00C630EA /* MainViewController.swift */; };
+		A7A3E0C12786E9E000C630EA /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7A3E0C02786E9E000C630EA /* CollectionViewCell.xib */; };
 		A7A5385D278559DA00DC53D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5385C278559DA00DC53D2 /* AppDelegate.swift */; };
 		A7A5385F278559DA00DC53D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5385E278559DA00DC53D2 /* SceneDelegate.swift */; };
 		A7A53861278559DA00DC53D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A53860278559DA00DC53D2 /* ViewController.swift */; };
@@ -15,6 +18,7 @@
 		A7A53869278559E300DC53D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A53867278559E300DC53D2 /* LaunchScreen.storyboard */; };
 		A7A53874278559E300DC53D2 /* learning_crumblesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A53873278559E300DC53D2 /* learning_crumblesTests.swift */; };
 		A7A5387F278559E300DC53D2 /* learning_crumblesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A5387E278559E300DC53D2 /* learning_crumblesUITests.swift */; };
+		A7F657CB2786F2E90087F9F5 /* RecipeTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F657CA2786F2E90087F9F5 /* RecipeTimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7A3E0B92786DC1900C630EA /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = "../../../../Desktop/Daily Crumbs (1)/fonts"; sourceTree = "<group>"; };
+		A7A3E0BE2786E80A00C630EA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A7A3E0C02786E9E000C630EA /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		A7A53859278559DA00DC53D2 /* learning_crumbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learning_crumbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A5385C278559DA00DC53D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A5385E278559DA00DC53D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,7 @@
 		A7A5387A278559E300DC53D2 /* learning_crumblesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learning_crumblesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A5387E278559E300DC53D2 /* learning_crumblesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learning_crumblesUITests.swift; sourceTree = "<group>"; };
 		A7A53880278559E300DC53D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F657CA2786F2E90087F9F5 /* RecipeTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7A3E0BB2786DD0D00C630EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7A3E0BC2786DD1200C630EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7A53867278559E300DC53D2 /* LaunchScreen.storyboard */,
+				A7A53862278559DA00DC53D2 /* Main.storyboard */,
+				A7A3E0C02786E9E000C630EA /* CollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7A3E0BD2786DD1700C630EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7A53860278559DA00DC53D2 /* ViewController.swift */,
+				A7A3E0BE2786E80A00C630EA /* MainViewController.swift */,
+				A7F657CA2786F2E90087F9F5 /* RecipeTimerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		A7A53850278559DA00DC53D2 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +134,14 @@
 		A7A5385B278559DA00DC53D2 /* learning_crumbles */ = {
 			isa = PBXGroup;
 			children = (
+				A7A3E0B92786DC1900C630EA /* fonts */,
 				A7A5385C278559DA00DC53D2 /* AppDelegate.swift */,
 				A7A5385E278559DA00DC53D2 /* SceneDelegate.swift */,
-				A7A53860278559DA00DC53D2 /* ViewController.swift */,
-				A7A53862278559DA00DC53D2 /* Main.storyboard */,
 				A7A53865278559E300DC53D2 /* Assets.xcassets */,
-				A7A53867278559E300DC53D2 /* LaunchScreen.storyboard */,
 				A7A5386A278559E300DC53D2 /* Info.plist */,
+				A7A3E0BD2786DD1700C630EA /* Controller */,
+				A7A3E0BC2786DD1200C630EA /* View */,
+				A7A3E0BB2786DD0D00C630EA /* Model */,
 			);
 			path = learning_crumbles;
 			sourceTree = "<group>";
@@ -235,6 +271,8 @@
 				A7A53869278559E300DC53D2 /* LaunchScreen.storyboard in Resources */,
 				A7A53866278559E300DC53D2 /* Assets.xcassets in Resources */,
 				A7A53864278559DA00DC53D2 /* Main.storyboard in Resources */,
+				A7A3E0BA2786DC1900C630EA /* fonts in Resources */,
+				A7A3E0C12786E9E000C630EA /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +300,8 @@
 				A7A53861278559DA00DC53D2 /* ViewController.swift in Sources */,
 				A7A5385D278559DA00DC53D2 /* AppDelegate.swift in Sources */,
 				A7A5385F278559DA00DC53D2 /* SceneDelegate.swift in Sources */,
+				A7A3E0BF2786E80A00C630EA /* MainViewController.swift in Sources */,
+				A7F657CB2786F2E90087F9F5 /* RecipeTimerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
